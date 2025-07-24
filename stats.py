@@ -14,4 +14,4 @@ def count_characters(book_text):
 
 
 def dict_to_list_of_dicts(chars_dict):
-    pass
+    print("test") 
