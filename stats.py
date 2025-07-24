@@ -14,4 +14,8 @@ def count_characters(book_text):
 
 
 def dict_to_list_of_dicts(chars_dict):
-    print("test") 
+    list_of_dicts = []
+    for k, v in chars_dict.items():
+        list_of_dicts.append({"char": k, "count": v})
+    sortedlist = sorted(list_of_dicts, key=lambda x: x["count"], reverse=True)
+    return sortedlist
