@@ -26,7 +26,7 @@ def main():
     print(f"Found {words_count} total words")
     print("--------- Character Count -------")
     print_letters_and_count(list_of_dicts)
-    print(============= END ===============)
+    print("============= END ===============")
 
 main()
 
