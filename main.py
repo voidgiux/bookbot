@@ -1,3 +1,4 @@
+import sys
 from stats import count_words, count_characters, dict_to_list_of_dicts
 
 
@@ -13,7 +14,10 @@ def print_letters_and_count(list_of_dicts):
 
 
 def main():
-    book_path = "books/frankenstein.txt"
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    book_path = sys.argv[1]
     book_text = get_book_text(book_path)
     words_count = count_words(book_text)
     chars_count = count_characters(book_text)
